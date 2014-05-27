@@ -2,6 +2,8 @@
  		Constructor function that creates a LDJClient that inherits 
  		from EventEmitter
 */
+"use strict";
+
 const events = require("events"),
 	  util = require("util"),
 	  //client constructor
