@@ -1,6 +1,7 @@
 /*
  		Constructor function that creates a LDJClient that inherits 
  		from EventEmitter
+ 		Relieves the client from the burden of bad messages 
 */
 "use strict";
 
@@ -8,6 +9,7 @@ const events = require("events"),
 	  util = require("util"),
 	  //client constructor
 	  LDJClient = function (stream) {
+	  	//call to "super class"
 	  	events.EventEmitter.call(this);
 	  	let self = this,
 	  	    buffer = "";

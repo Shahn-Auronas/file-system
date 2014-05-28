@@ -1,7 +1,7 @@
 "use strict";
 
 const net = require("net"),
-	  ldj = require("./ldj.js"),
+	  ldj = require("/Users/shahnauronas/file-system/networking/ldj.js"),
 	  netClient = net.connect({port: 5432}),
 	  ldjClient = ldj.connect(netClient);
 ldjClient.on("mesage", function (message) {
